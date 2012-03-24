@@ -45,6 +45,7 @@
   d = diff
   df = diff --color-words
   fix = commit --amend
+  l = !zsh -ic 'source ~/.githelpers && pretty_git_log'
   m = merge
   s = status -sb
   w = whatchanged
