@@ -40,7 +40,8 @@
 [alias]
   a = add
   b = branch
-  c = commit 
+  c = commit -m 
+  cx = commit -am 
   co = checkout
   d = diff
   dd = diff HEAD
