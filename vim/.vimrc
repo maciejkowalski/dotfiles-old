@@ -86,6 +86,16 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'sickill/vim-pasta'
+Bundle 'tpope/vim-haml'
+Bundle 'pangloss/vim-javascript'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'ervandew/supertab'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+Bundle 'jgdavey/vim-blockle'
+
 
 filetype on           " Enable filetype detection after Vundle
 filetype indent on    " Enable filetype-specific indenting
