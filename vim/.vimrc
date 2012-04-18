@@ -1,16 +1,38 @@
-" Tabs
-set tabstop=2
-set shiftwidth=2
-set expandtab
+"""""""""""
+" Options "
+"""""""""""
 
-" Number lines
-set nu!
+set nocompatible " turn off compatibility with Vi
+
+set hidden " hide buffers when not displayed
+
+set nobackup " don't make a backup before overwriting a file.
+set nowritebackup " ^^^
+set noswapfile " don't need no stinky swapfiles
+set directory=~/tmp,/tmp " keep swap files in one location
+
+set confirm " confirm on quit, etc.
+set autoread " automatically read changes from disk
+
+set showcmd " display incomplete commands.
+set history=1000 " remember more commands and search history
+
+set softtabstop=2 " soft tab width
+set tabstop=2 " global tab width
+set shiftwidth=2 " number of spaces for (un)indenting
+set shiftround " round indent to multiple of 'shiftwidth'
+set expandtab " expand tab characters into spaces
+
+set number! " Number lines
 
 " Leader
 let mapleader = ","
 
-" Ignore case in search
-set ignorecase
+" Search
+set ignorecase " Ignore case in search
+set hlsearch " highlight matches...
+set incsearch " ...as you type.
+
 
 " Run NERDTree on ESC+t
 function OpenNERDTree()
@@ -19,9 +41,6 @@ endfunction
 command -nargs=0 OpenNERDTree :call OpenNERDTree()
 
 nmap <ESC>t :OpenNERDTree<CR>
-
-" Highlight search
-set hlsearch
 
 " Solarized
 syntax enable
@@ -61,36 +80,12 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-"
-" original repos on github
 Bundle 'scrooloose/nerdtree'
 Bundle 'wincent/Command-T'
 Bundle 'tpope/vim-rails.git'
 Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-ruby/vim-ruby'
-
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
-" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" ...
-
-filetype plugin indent on     " required!
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
-"
 
 filetype on           " Enable filetype detection after Vundle
 filetype indent on    " Enable filetype-specific indenting
