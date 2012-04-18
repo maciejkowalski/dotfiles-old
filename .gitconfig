@@ -40,18 +40,19 @@
 [alias]
   a = add
   b = branch
-  c = commit -m 
-  cx = commit -am 
+  c = commit -m
+  cx = commit -am
   co = checkout
   d = diff
   dd = diff HEAD
   df = diff --color-words
   fix = commit --amend
   l = !bash -ic 'source ~/.githelpers && pretty_git_log'
+  lk = !bash -ic 'source ~/.githelpers && pretty_git_log_full'
   m = merge
   s = status -sb
   w = whatchanged
-  
+
 [push]
   default = current
 

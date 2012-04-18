@@ -26,9 +26,16 @@ show_git_head() {
     git show -p --pretty="tformat:"
 }
 
-pretty_git_log() {
+pretty_git_log_full() {
     git log --graph --abbrev-commit --pretty="tformat:${FORMAT}" $* |
-    #git log --graph --abbrev-commit --date=relative --pretty="tformat:${FORMAT}" $* |
+        # Line columns up based on } delimiter
+        column -s '}' -t |
+        # Page only if we need to
+        less -FXRS
+}
+
+pretty_git_log() {
+    git log --graph --abbrev-commit --date=relative --pretty="tformat:${FORMAT}" $* |
         # Line columns up based on } delimiter
         column -s '}' -t |
         # Page only if we need to
