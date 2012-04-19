@@ -25,6 +25,8 @@ set expandtab " expand tab characters into spaces
 
 set number! " Number lines
 
+set mouse=a " enable mouse in GUI & terminal
+
 " Leader
 let mapleader = ","
 
@@ -95,7 +97,9 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'jgdavey/vim-blockle'
-
+Bundle 'vim-scripts/vim-json-bundle'
+Bundle 'vim-scripts/nginx.vim'
+au BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
 filetype on           " Enable filetype detection after Vundle
 filetype indent on    " Enable filetype-specific indenting
