@@ -98,7 +98,10 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'vim-scripts/vim-json-bundle'
+Bundle 'tpope/vim-commentary'
+Bundle 'mattn/gist-vim'
 Bundle 'vim-scripts/nginx.vim'
+Bundle 'vim-scripts/matchit.zip'
 au BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
 filetype on           " Enable filetype detection after Vundle
