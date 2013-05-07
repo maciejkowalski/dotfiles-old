@@ -61,6 +61,7 @@ syntax enable
 :set t_Co=256 " 256 colors
 :set background=dark
 :color grb256
+:highlight Normal ctermfg=grey ctermbg=black
 
 " Inconsolata
 if has("gui_running")
