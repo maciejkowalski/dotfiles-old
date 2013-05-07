@@ -44,15 +44,23 @@ command -nargs=0 OpenNERDTree :call OpenNERDTree()
 
 nmap <ESC>t :OpenNERDTree<CR>
 
-" Solarized
+" " Solarized
+" syntax enable
+" if has('gui_running')
+"   set background=dark
+" else
+"   set background=dark
+" endif
+" " let g:solarized_termcolors=256
+" colorscheme solarized
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" COLOR
+" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
-if has('gui_running')
-  set background=dark
-else
-  set background=dark
-endif
-" let g:solarized_termcolors=256
-colorscheme solarized
+:set t_Co=256 " 256 colors
+:set background=dark
+:color grb256
 
 " Inconsolata
 if has("gui_running")
@@ -102,6 +110,7 @@ Bundle 'tpope/vim-commentary'
 Bundle 'mattn/gist-vim'
 Bundle 'vim-scripts/nginx.vim'
 Bundle 'vim-scripts/matchit.zip'
+Bundle 'vim-scripts/c.vim'
 au BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
 filetype on           " Enable filetype detection after Vundle
@@ -116,3 +125,8 @@ if has("autocmd")
   autocmd FileType ruby let g:rubycomplete_classes_in_global=1
 endif
 
+" Disable arrow keys
+"map <Left> <Nop>
+"map <Right> <Nop>
+"map <Up> <Nop>
+"map <Down> <Nop>
