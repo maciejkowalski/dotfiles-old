@@ -56,12 +56,16 @@ nmap <ESC>t :OpenNERDTree<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " COLOR
-" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 :set t_Co=256 " 256 colors
 :set background=dark
 :color grb256
 :highlight Normal ctermfg=grey ctermbg=black
+
+
+hi Search ctermbg=brown
+hi Search guibg=brown
 
 " Inconsolata
 if has("gui_running")
