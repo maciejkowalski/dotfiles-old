@@ -135,3 +135,5 @@ endif
 "map <Right> <Nop>
 "map <Up> <Nop>
 "map <Down> <Nop>
+
+set guioptions-=T
