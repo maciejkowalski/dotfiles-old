@@ -116,6 +116,8 @@ Bundle 'mattn/gist-vim'
 Bundle 'vim-scripts/nginx.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/c.vim'
+Bundle 'rking/ag.vim'
+
 au BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
 filetype on           " Enable filetype detection after Vundle
