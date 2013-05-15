@@ -117,6 +117,7 @@ Bundle 'vim-scripts/nginx.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/c.vim'
 Bundle 'rking/ag.vim'
+Bundle 'skalnik/vim-vroom'
 
 au BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
