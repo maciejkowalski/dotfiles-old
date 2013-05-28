@@ -14,12 +14,14 @@
 # break this.
 
 HASH="%C(yellow)%h%Creset"
+FULLHASH="%C(yellow)%H%Creset"
 RELATIVE_TIME="%Cgreen(%ad)%Creset"
 AUTHOR="%C(bold blue)<%an>%Creset"
 REFS="%C(red)%d%Creset"
 SUBJECT="%s"
 
 FORMAT="$HASH}$RELATIVE_TIME}$AUTHOR}$REFS $SUBJECT"
+LONGFORMAT="$FULLHASH}$RELATIVE_TIME}$AUTHOR}$REFS $SUBJECT"
 
 show_git_head() {
     pretty_git_log -1
@@ -27,17 +29,22 @@ show_git_head() {
 }
 
 pretty_git_log_full() {
-    git log --graph --abbrev-commit --pretty="tformat:${FORMAT}" $* |
+    git log --graph --pretty="tformat:${LONGFORMAT}" $* |
         # Line columns up based on } delimiter
         column -s '}' -t |
         # Page only if we need to
         less -FXRS
 }
 
-pretty_git_log() {
-    git log --graph --abbrev-commit --date=relative --pretty="tformat:${FORMAT}" $* |
-        # Line columns up based on } delimiter
+pretty_git_log_medium() {
+    git log --graph --abbrev-commit --pretty="tformat:${FORMAT}" $* |
         column -s '}' -t |
-        # Page only if we need to
         less -FXRS
 }
+
+pretty_git_log_short() {
+    git log --graph --abbrev-commit --date=relative --pretty="tformat:${FORMAT}" $* |
+        column -s '}' -t |
+        less -FXRS
+}
+
