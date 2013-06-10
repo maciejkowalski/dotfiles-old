@@ -141,3 +141,6 @@ endif
 "map <Down> <Nop>
 
 set guioptions-=T
+
+nnoremap <leader>g :Ag<Space>
+
