@@ -60,7 +60,7 @@ nmap <ESC>t :OpenNERDTree<CR>
 syntax enable
 :set t_Co=256 " 256 colors
 :set background=dark
-:color grb256
+:color solarized "grb256
 :highlight Normal ctermfg=grey ctermbg=black
 
 
