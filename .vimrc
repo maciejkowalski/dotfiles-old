@@ -145,3 +145,6 @@ set guioptions-=T
 
 nnoremap <leader>g :Ag<Space>
 
+" ARB templates
+autocmd BufRead,BufNewFile *.arb setfiletype ruby
+
