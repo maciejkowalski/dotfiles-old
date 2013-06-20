@@ -62,3 +62,9 @@ alias berg="bundle exec rake db:migrate db:rollback"
 alias usedports="sudo netstat -tulpn"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Ruby GC tuning
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_FREE_MIN=500000
+export RUBY_HEAP_MIN_SLOTS=40000
+
