@@ -56,8 +56,9 @@ alias tlog="tail -f log/test.log"
 alias redek="redshift -l 50.1:19.9 -t 5500:3600 -g 0.8 -m vidmode -v"
 alias gpc="gp; gp bitbucket; cap deploy"
 alias be="bundle exec"
-alias berdbm="bundle exec rake db:migrate db:test:clone"
+alias berdbm="bundle exec rake db:migrate db:test:prepare"
 alias glc="gl --rebase origin master; bundle; berdbm"
 alias berg="bundle exec rake db:migrate db:rollback"
+alias usedports="sudo netstat -tulpn"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
