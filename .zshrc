@@ -60,6 +60,7 @@ alias berdbm="bundle exec rake db:migrate db:test:prepare"
 alias glc="gl --rebase origin master; bundle; berdbm"
 alias berg="bundle exec rake db:migrate db:rollback"
 alias usedports="sudo netstat -tulpn"
+alias c="cd"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
