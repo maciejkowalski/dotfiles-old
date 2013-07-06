@@ -58,10 +58,10 @@ nmap <ESC>t :OpenNERDTree<CR>
 " COLOR
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
-:set t_Co=256 " 256 colors
-:set background=dark
-:color solarized "grb256
-:highlight Normal ctermfg=grey ctermbg=black
+set t_Co=256 " 256 colors
+set background=dark
+color grb256
+highlight Normal ctermfg=grey ctermbg=black
 
 
 hi Search ctermbg=brown
@@ -70,7 +70,7 @@ hi Search guibg=brown
 " Inconsolata
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 12
+    set guifont=Inconsolata\ 11.5
   elseif has("gui_win32")
     set guifont=Consolas:h11:cANSI
   endif
