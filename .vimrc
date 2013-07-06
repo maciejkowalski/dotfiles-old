@@ -120,6 +120,7 @@ Bundle 'vim-scripts/c.vim'
 Bundle 'rking/ag.vim'
 Bundle 'skalnik/vim-vroom'
 Bundle 'tsaleh/vim-matchit'
+Bundle 'nono/vim-handlebars'
 
 au BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
