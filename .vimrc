@@ -31,7 +31,8 @@ set mouse=a " enable mouse in GUI & terminal
 let mapleader = ","
 
 " Search
-set smartcase " Smartcase is better than ignorecase
+"set smartcase " Smartcase is better than ignorecase
+set ignorecase " I was wrong...
 set hlsearch " highlight matches...
 set incsearch " ...as you type.
 
