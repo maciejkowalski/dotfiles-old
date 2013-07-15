@@ -150,3 +150,6 @@ nnoremap <leader>g :Ag<Space>
 " ARB templates
 autocmd BufRead,BufNewFile *.arb setfiletype ruby
 
+" Haml coffee
+au BufRead,BufNewFile *.hamlc set ft=haml
+
