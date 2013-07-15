@@ -63,6 +63,8 @@ alias usedports="sudo netstat -tulpn"
 alias c="cd"
 alias z="zeus"
 alias zr="zeus rspec"
+alias l="ls -lAh"
+alias gt="git citool"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
