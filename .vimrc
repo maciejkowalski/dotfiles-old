@@ -154,3 +154,7 @@ autocmd BufRead,BufNewFile *.arb setfiletype ruby
 " Haml coffee
 au BufRead,BufNewFile *.hamlc set ft=haml
 
+" Maximize GVim on start
+if has("gui_running")
+  set lines=999 columns=999
+endif
