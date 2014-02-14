@@ -29,7 +29,7 @@ ZSH_THEME="nebirhos" #"robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails3 rvm)
+plugins=(git rails rvm)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -60,6 +60,7 @@ alias berdbm="bundle exec rake db:migrate db:test:prepare"
 alias glc="gl --rebase origin master; bundle; berdbm"
 alias berg="bundle exec rake db:migrate db:rollback"
 alias usedports="sudo netstat -tulpn"
+alias occupiedspace="du -ms *|sort -n"
 alias c="cd"
 alias z="zeus"
 alias zr="zeus rspec"
