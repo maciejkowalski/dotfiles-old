@@ -146,7 +146,7 @@ endif
 
 set guioptions-=T
 
-nnoremap <leader>g :Ag<Space>
+nnoremap <leader>s :Ag<Space>
 
 " ARB templates
 autocmd BufRead,BufNewFile *.arb setfiletype ruby
@@ -158,3 +158,32 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 if has("gui_running")
   set lines=999 columns=999
 endif
+
+
+" grb magic
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>v :view %%
+
+map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
+
+map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
+map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
+map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
+map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
+map <leader>gw :CommandTFlush<cr>\|:CommandT app/workers<cr>
+map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
+map <leader>gp :CommandTFlush<cr>\|:CommandT public<cr>
+map <leader>gs :CommandTFlush<cr>\|:CommandT public/stylesheets<cr>
+map <leader>gf :CommandTFlush<cr>\|:CommandT features<cr>
+map <leader>gg :topleft 100 :split Gemfile<cr>
+map <leader>gt :CommandTFlush<cr>\|:CommandTTag<cr>
+map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+
+" Vroom
+map <leader>r :VroomRunNearestTest<cr>
+
+" tabedit % - double tab
+map <leader>dd :tabedit %<cr>
+
