@@ -123,6 +123,7 @@ Bundle 'skalnik/vim-vroom'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'nono/vim-handlebars'
 Bundle 'vim-scripts/yaml.vim'
+Bundle 'gcmt/wildfire.vim'
 
 au BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
@@ -186,4 +187,15 @@ map <leader>r :VroomRunNearestTest<cr>
 
 " tabedit % - double tab
 map <leader>dd :tabedit %<cr>
+
+
+
+
+" wildfire.vim
+"
+" This selects the next closest text object.
+let g:wildfire_fuel_map = "<ENTER>"
+
+" This selects the previous closest text object.
+let g:wildfire_water_map = "<BS>"
 
