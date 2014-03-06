@@ -65,6 +65,7 @@ alias z="zeus"
 alias zr="zeus rspec"
 alias l="ls -lAh"
 alias gt="git citool"
+alias additional-gems-install="gem install zeus git-up tmuxinator fzf"
 
 # Ruby GC tuning
 # large apps
