@@ -41,7 +41,6 @@ export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/u
 export EDITOR=vim
 
 # RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 # tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
@@ -67,8 +66,6 @@ alias zr="zeus rspec"
 alias l="ls -lAh"
 alias gt="git citool"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 # Ruby GC tuning
 # large apps
 #export RUBY_GC_MALLOC_LIMIT=1000000000
@@ -81,3 +78,5 @@ export RUBY_GC_HEAP_FREE_SLOTS=20000
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
