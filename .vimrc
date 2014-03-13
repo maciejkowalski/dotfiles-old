@@ -61,12 +61,8 @@ nmap <ESC>t :OpenNERDTree<CR>
 syntax enable
 set t_Co=256 " 256 colors
 set background=dark
-color grb256
+color solarized
 highlight Normal ctermfg=grey ctermbg=black
-
-
-hi Search ctermbg=brown
-hi Search guibg=brown
 
 " Inconsolata
 if has("gui_running")
