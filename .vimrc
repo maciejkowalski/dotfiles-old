@@ -67,9 +67,9 @@ highlight Normal ctermfg=grey ctermbg=black
 " Inconsolata
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 11.5
+    set guifont=Inconsolata\ 13
   elseif has("gui_win32")
-    set guifont=Consolas:h11:cANSI
+    set guifont=Consolas:h12:cANSI
   endif
 endif
 
