@@ -169,9 +169,9 @@ map <leader>gc :CtrlP app/controllers<cr>
 map <leader>gm :CtrlP app/models<cr>
 map <leader>gh :CtrlP app/helpers<cr>
 map <leader>gw :CtrlP app/workers<cr>
+map <leader>gs :CtrlP spec<cr>
 map <leader>gl :CtrlP lib<cr>
 map <leader>gp :CtrlP public<cr>
-map <leader>gs :CtrlP public/stylesheets<cr>
 map <leader>gf :CtrlP features<cr>
 map <leader>gg :topleft 100 :split Gemfile<cr>
 map <leader>f :CtrlP<cr>
