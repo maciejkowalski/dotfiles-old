@@ -94,7 +94,7 @@ Plugin 'gmarik/vundle'
 " My Plugins here:
 Plugin 'tpope/vim-rails'
 Plugin 'scrooloose/nerdtree'
-Plugin 'wincent/Command-T'
+Plugin 'kien/ctrlp.vim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-ruby/vim-ruby'
@@ -162,21 +162,20 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
 map <leader>v :view %%
 
-map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>t :CtrlP<cr>
 
-map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
-map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
-map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
-map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-map <leader>gw :CommandTFlush<cr>\|:CommandT app/workers<cr>
-map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
-map <leader>gp :CommandTFlush<cr>\|:CommandT public<cr>
-map <leader>gs :CommandTFlush<cr>\|:CommandT public/stylesheets<cr>
-map <leader>gf :CommandTFlush<cr>\|:CommandT features<cr>
+map <leader>gv :CtrlP app/views<cr>
+map <leader>gc :CtrlP app/controllers<cr>
+map <leader>gm :CtrlP app/models<cr>
+map <leader>gh :CtrlP app/helpers<cr>
+map <leader>gw :CtrlP app/workers<cr>
+map <leader>gl :CtrlP lib<cr>
+map <leader>gp :CtrlP public<cr>
+map <leader>gs :CtrlP public/stylesheets<cr>
+map <leader>gf :CtrlP features<cr>
 map <leader>gg :topleft 100 :split Gemfile<cr>
-map <leader>gt :CommandTFlush<cr>\|:CommandTTag<cr>
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+map <leader>f :CtrlP<cr>
+map <leader>F :CtrlP %%<cr>
 
 " Vroom
 map <leader>r :VroomRunNearestTest<cr>
