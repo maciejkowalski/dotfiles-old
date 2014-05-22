@@ -84,48 +84,48 @@ endif
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-" My Bundles here:
-Bundle 'tpope/vim-rails'
-Bundle 'scrooloose/nerdtree'
-Bundle 'wincent/Command-T'
-Bundle 'tpope/vim-rails.git'
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'sickill/vim-pasta'
-Bundle 'tpope/vim-haml'
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'ervandew/supertab'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'jgdavey/vim-blockle'
-Bundle 'vim-scripts/vim-json-bundle'
-Bundle 'tpope/vim-commentary'
-Bundle 'mattn/gist-vim'
-Bundle 'vim-scripts/nginx.vim'
-Bundle 'vim-scripts/matchit.zip'
-Bundle 'vim-scripts/c.vim'
-Bundle 'rking/ag.vim'
-Bundle 'skalnik/vim-vroom'
-Bundle 'tsaleh/vim-matchit'
-Bundle 'nono/vim-handlebars'
-Bundle 'vim-scripts/yaml.vim'
-Bundle 'gcmt/wildfire.vim'
+" My Plugins here:
+Plugin 'tpope/vim-rails'
+Plugin 'scrooloose/nerdtree'
+Plugin 'wincent/Command-T'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'sickill/vim-pasta'
+Plugin 'tpope/vim-haml'
+Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'jgdavey/vim-blockle'
+Plugin 'vim-scripts/vim-json-bundle'
+Plugin 'tpope/vim-commentary'
+Plugin 'mattn/gist-vim'
+Plugin 'vim-scripts/nginx.vim'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'vim-scripts/c.vim'
+Plugin 'rking/ag.vim'
+Plugin 'skalnik/vim-vroom'
+Plugin 'tsaleh/vim-matchit'
+Plugin 'nono/vim-handlebars'
+Plugin 'vim-scripts/yaml.vim'
+Plugin 'gcmt/wildfire.vim'
 
-au BufRead,BufNewFile /etc/nginx/* set ft=nginx
-
+call vundle#end()
 filetype on           " Enable filetype detection after Vundle
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
+
+au BufRead,BufNewFile /etc/nginx/* set ft=nginx
 
 
 " Fix bug with broken Omni completion
