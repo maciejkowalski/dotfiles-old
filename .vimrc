@@ -153,7 +153,7 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 
 " Maximize GVim on start
 if has("gui_running")
-  set lines=999 columns=999
+  set lines=100 columns=100
 endif
 
 
