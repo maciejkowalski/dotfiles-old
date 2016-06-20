@@ -66,18 +66,27 @@ alias zr="zeus rspec"
 alias l="ls -lAh"
 alias gt="git citool"
 alias additional-gems-install="gem install zeus git-up tmuxinator fzf"
+alias sr="spring rspec"
 
 # Ruby GC tuning
 # large apps
 #export RUBY_GC_MALLOC_LIMIT=1000000000
 #export RUBY_FREE_MIN=500000
 #export RUBY_HEAP_MIN_SLOTS=40000
+
 # medium and small apps
-export RUBY_GC_MALLOC_LIMIT=60000000
+#export RUBY_GC_MALLOC_LIMIT=60000000
 # export RUBY_FREE_MIN=200000
-export RUBY_GC_HEAP_FREE_SLOTS=20000
+#export RUBY_GC_HEAP_FREE_SLOTS=20000
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+## RVM stuff
+PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+[ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
+
+export SPRING_USED=true
+export WEB_CONCURRENCY=1
+export MAX_THREADS=1
+

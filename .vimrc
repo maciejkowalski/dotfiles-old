@@ -119,6 +119,8 @@ Plugin 'tsaleh/vim-matchit'
 Plugin 'nono/vim-handlebars'
 Plugin 'vim-scripts/yaml.vim'
 Plugin 'gcmt/wildfire.vim'
+Plugin 'Shutnik/jshint2.vim'
+Plugin 'briancollins/vim-jst'
 
 call vundle#end()
 filetype on           " Enable filetype detection after Vundle
@@ -169,6 +171,7 @@ map <leader>gc :CtrlP app/controllers<cr>
 map <leader>gm :CtrlP app/models<cr>
 map <leader>gh :CtrlP app/helpers<cr>
 map <leader>gw :CtrlP app/workers<cr>
+map <leader>ga :CtrlP app/assets<cr>
 map <leader>gs :CtrlP spec<cr>
 map <leader>gl :CtrlP lib<cr>
 map <leader>gp :CtrlP public<cr>
@@ -194,3 +197,6 @@ let g:wildfire_fuel_map = "<ENTER>"
 " This selects the previous closest text object.
 let g:wildfire_water_map = "<BS>"
 
+
+" https://coderwall.com/p/faceag
+com! FormatJSON %!python -m json.tool
