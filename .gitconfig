@@ -54,7 +54,7 @@
   s = status -sb
   w = whatchanged
   gui = !sh -c '/usr/local/Cellar/git/2.9.0/libexec/git-core/git-gui'
-	align = fetch origin master && git rebase origin/master
+	align = !git fetch origin master && git rebase origin/master
 
 [push]
   default = current
