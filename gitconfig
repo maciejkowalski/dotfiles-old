@@ -55,6 +55,7 @@
   w = whatchanged
   gui = !sh -c '/usr/local/Cellar/git/2.9.0/libexec/git-core/git-gui'
 	align = !git fetch origin master && git rebase origin/master
+  pf = push --force-with-lease
 
 [push]
   default = current
@@ -78,3 +79,4 @@
 [gui]
 	fontui = -family \"DejaVu Sans\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
 	fontdiff = -family \"DejaVu Sans Mono\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+	spellingdictionary = en

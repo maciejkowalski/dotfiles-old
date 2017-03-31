@@ -61,7 +61,7 @@ nmap <ESC>t :OpenNERDTree<CR>
 syntax enable
 set t_Co=256 " 256 colors
 set background=dark
-color solarized
+colorscheme solarized
 highlight Normal ctermfg=grey ctermbg=black
 
 " Inconsolata
@@ -115,7 +115,7 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/c.vim'
 Plugin 'rking/ag.vim'
 Plugin 'skalnik/vim-vroom'
-Plugin 'tsaleh/vim-matchit'
+Plugin 'jwhitley/vim-matchit'
 Plugin 'nono/vim-handlebars'
 Plugin 'vim-scripts/yaml.vim'
 Plugin 'gcmt/wildfire.vim'
